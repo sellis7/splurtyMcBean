@@ -78,9 +78,10 @@ hr {
 }
 
 h1 {
+	text-align: center;
 	font-family: 'alegreya_sansregular', sans-serif;
 	font-weight: normal; //didn't want to use bold
-	font-size: 2.5em;
+	font-size: 3.5em;
 	/* easy font method - left for reference
 	 font-family: 'Muli', sans-serif;
 	 font-weight: 600;
@@ -89,4 +90,18 @@ h1 {
 
 h2 {
 	font-family: 'alegreya_sanslight', sans-serif;
+}
+
+/* footer */
+.next-quote {
+	color: #ec0000;
+	font-family: 'alegreya_sansregular', sans-serif;
+	font-weight: bold;
+	font-size: 1.25em;
+}
+
+.footer-blurb {
+	font-family: "Segoe UI", Candara, "Bitstream Vera Sans", "DejaVu Sans", "Bitstream Vera Sans", "Trebuchet MS", Verdana, "Verdana Ref", sans-serif;
+	font-style: italic;
+	font-size: .75em;
 }
