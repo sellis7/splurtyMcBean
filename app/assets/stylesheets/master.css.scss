@@ -1,9 +1,12 @@
+/* "intermediate" font method - left as reference
+ @import url(https://fonts.googleapis.com/css?family=Muli:400,300);
+*/
 .clear {
 	clear: both;
 }
 
 .colorbar {		//wanted to do something a bit fancier than just a top border
-	margin-bottom: -145px;
+	margin: 0 -15px -145px;
 	height: 145px;
 	background: #5d16c3;
 	position: relative;
@@ -51,8 +54,9 @@
 /* slogan - Trebuchet-based sans serif stack */
 .slogan {
 	font-family: "Segoe UI", Candara, "Bitstream Vera Sans", "DejaVu Sans", "Bitstream Vera Sans", "Trebuchet MS", Verdana, "Verdana Ref", sans-serif;
+	text-align: center;
 	font-style: italic;
-	padding-top: 25px;
+	padding-top: 20px;
 }
 
 /* links */
@@ -61,6 +65,8 @@
 }
 .links a {
 	color: #5d16c3;
+	font-family: 'alegreya_sansregular', sans-serif;
+	font-weight: bold;
 	font-size: 1.25em;
 }
 .links a:hover {
@@ -69,4 +75,18 @@
 
 hr {
 	clear: both;
+}
+
+h1 {
+	font-family: 'alegreya_sansregular', sans-serif;
+	font-weight: normal; //didn't want to use bold
+	font-size: 2.5em;
+	/* easy font method - left for reference
+	 font-family: 'Muli', sans-serif;
+	 font-weight: 600;
+	letter-spacing: -1.5px; */
+}
+
+h2 {
+	font-family: 'alegreya_sanslight', sans-serif;
 }
