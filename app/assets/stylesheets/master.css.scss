@@ -8,13 +8,13 @@
 .colorbar {		//wanted to do something a bit fancier than just a top border
 	margin: 0 -15px -145px;
 	height: 145px;
-	background: #5d16c3;
+	background: #16a4c3;
 	position: relative;
 	z-index: -2;
 }
 
 /* logo */
-.cloud {
+#cloud {
   margin: 85px auto 0px auto;
   width: 230px;
   height: 80px;
@@ -29,26 +29,28 @@
 	text-align: center;
 	color: #fff;
 	font-size: 1.25em;
-
 }
-.cloud:before, .cloud:after{
+#cloud:before, #cloud:after{
   content: '';
   border-radius: 100px;
   position: absolute;
   background: #d4d5d6;
 	z-index: -1;
 }
-.cloud:before{
+#cloud:before{
   width: 80px;
   height: 80px;
   top: -38px;
   left: 30px;
 }
-.cloud:after{
+#cloud:after{
   width: 110px;
   height: 110px;
   top: -58px;
   right: 30px;
+}
+.logo:hover {
+	text-decoration: none;
 }
 
 /* slogan - Trebuchet-based sans serif stack */
@@ -56,15 +58,15 @@
 	font-family: "Segoe UI", Candara, "Bitstream Vera Sans", "DejaVu Sans", "Bitstream Vera Sans", "Trebuchet MS", Verdana, "Verdana Ref", sans-serif;
 	text-align: center;
 	font-style: italic;
-	padding-top: 20px;
+	padding: 15px 0;
 }
 
 /* links */
 .links {
-	padding-top: 20px;
+	padding: 25px 15px 0;
 }
 .links a {
-	color: #5d16c3;
+	color: #16a4c3;
 	font-family: 'alegreya_sansregular', sans-serif;
 	font-weight: bold;
 	font-size: 1.25em;
@@ -78,10 +80,10 @@ hr {
 }
 
 h1 {
-	text-align: center;
 	font-family: 'alegreya_sansregular', sans-serif;
 	font-weight: normal; //didn't want to use bold
 	font-size: 3.5em;
+	text-align: center;
 	/* easy font method - left for reference
 	 font-family: 'Muli', sans-serif;
 	 font-weight: 600;
@@ -90,14 +92,15 @@ h1 {
 
 h2 {
 	font-family: 'alegreya_sanslight', sans-serif;
+	text-align: right;
 }
 
-/* footer */
+/* footer - TEXT ONLY */
 .next-quote {
 	color: #ec0000;
 	font-family: 'alegreya_sansregular', sans-serif;
 	font-weight: bold;
-	font-size: 1.25em;
+	font-size: 1.5em;
 }
 
 .footer-blurb {
