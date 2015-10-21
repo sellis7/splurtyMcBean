@@ -79,11 +79,14 @@ hr {
 	clear: both;
 }
 
+/* quote styling */
 h1 {
 	font-family: 'alegreya_sansregular', sans-serif;
 	font-weight: normal; //didn't want to use bold
 	font-size: 3.5em;
 	text-align: center;
+	position: relative;
+	padding-top: 35px;
 	/* easy font method - left for reference
 	 font-family: 'Muli', sans-serif;
 	 font-weight: 600;
@@ -93,6 +96,15 @@ h1 {
 h2 {
 	font-family: 'alegreya_sanslight', sans-serif;
 	text-align: right;
+}
+
+.q_mark {
+	position: absolute;
+	z-index: -1;
+	margin: -135px -55px;
+	font-family: 'alegreya_sansblack', sans-serif;
+	font-size: 7em;
+	color: #dcdddf;
 }
 
 /* footer - TEXT ONLY */
