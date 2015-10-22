@@ -3,9 +3,10 @@ class QuotesController < ApplicationController
 		@quote = Quote.order("RANDOM()").first
 	end
 
-	def new 	# new "action" for user to submit to database
-		@quote = Quote.new
-	end
+	# NOT USED - added modal window
+	# def new 	# new "action" for user to submit to database
+	# 	@quote = Quote.new
+	# end
 
 	def create
 		@quote = Quote.create(quote_params)

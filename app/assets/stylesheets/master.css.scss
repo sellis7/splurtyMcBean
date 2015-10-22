@@ -2,9 +2,6 @@
  @import url(https://fonts.googleapis.com/css?family=Muli:400,300);
 */
 
-
-
-
 .clear {
 	clear: both;
 }
@@ -25,11 +22,11 @@
   border-radius: 100px;
   position: relative;
   background: #d4d5d6;
-	background: linear-gradient(top, #d4d5d6 5%, #898a8b 100%);
-	background: -webkit-linear-gradient(top, #d4d5d6 5%, #898a8b 100%);
-	background: -moz-linear-gradient(top, #d4d5d6 5%, #898a8b 100%);
-	background: -ms-linear-gradient(top, #d4d5d6 5%, #898a8b 100%);
-	background: -o-linear-gradient(top, #d4d5d6 5%, #898a8b 100%);
+	background: linear-gradient(top, #d4d5d6 10%, #898a8b 100%);
+	background: -webkit-linear-gradient(top, #d4d5d6 10%, #898a8b 100%);
+	background: -moz-linear-gradient(top, #d4d5d6 10%, #898a8b 100%);
+	background: -ms-linear-gradient(top, #d4d5d6 10%, #898a8b 100%);
+	background: -o-linear-gradient(top, #d4d5d6 10%, #898a8b 100%);
 	text-align: center;
 	color: #fff;
 	font-size: 1.25em;
@@ -67,7 +64,7 @@
 
 /* links */
 .links {
-	padding: 25px 15px 0;
+	padding: 10px 15px 10px 0;
 }
 .links a {
 	color: #16a4c3;
@@ -90,13 +87,17 @@ h1 {
 }
 
 /* quote styling */
+.msg {
+	margin-top: -15px;
+}
+
 #phrase {
 	font-family: 'alegreya_sansregular', sans-serif;
 	font-weight: normal; //didn't want to use bold
 	font-size: 3.5em;
 	text-align: center;
 	position: relative;
-	padding-top: 35px;
+	margin-right: 15px;
 	/* easy font method - left for reference
 	 font-family: 'Muli', sans-serif;
 	 font-weight: 600;
@@ -105,17 +106,28 @@ h1 {
 
 h2 {
 	font-family: 'alegreya_sanslight', sans-serif;
-	text-align: right;
+}
+
+h2.catchphrase {
+	margin-bottom: 25px;
+	text-align: left;
+	color: #898a8b;
+}
+
+.counter {
+	font-family: 'alegreya_sansregular', sans-serif;
+	color: #16a4c3;
 }
 
 .q_mark {
 	position: absolute;
 	z-index: -1;
-	margin: -135px -55px;
+	margin: -140px 0 0 -60px;
 	font-family: 'alegreya_sansblack', sans-serif;
 	font-size: 7em;
 	color: #dcdddf;
 }
+
 
 /* footer - TEXT ONLY */
 .next-quote {
@@ -127,16 +139,22 @@ h2 {
 
 .footer-blurb {
 	font-family: "Segoe UI", Candara, "Bitstream Vera Sans", "DejaVu Sans", "Bitstream Vera Sans", "Trebuchet MS", Verdana, "Verdana Ref", sans-serif;
+	padding-right: 10%;
 	font-style: italic;
 	font-size: .75em;
 }
+.footer-blurb,
+.more {
+	padding-top: 8px;
+}
 
-/* about page */
-div.about {
+/* About page & Modal*/
+div.about,
+.modal {
 	font-family: "Segoe UI", Candara, "Bitstream Vera Sans", "DejaVu Sans", "Bitstream Vera Sans", "Trebuchet MS", Verdana, "Verdana Ref", sans-serif;
 }
 
-h4 {
+.alice {
 	padding-top: 10px;
 	border-top: 1.5px solid #ec0000;
 	font-family: 'alegreya_sansbold', sans-serif;
@@ -151,15 +169,19 @@ img {
 	padding-bottom: 40px;
 }
 
-/* About page adjustments */
+::selection {
+	background-color: #fffe96; // didn't like the red - opted for yellow
+}
+
+/* Responsive layout adjustments */
 @media (min-width:769px){
-	h4 {
+	.alice {
 		padding-bottom: 10px;
 		border-bottom: 1.5px solid #ec0000;
 	}
 }
 @media (max-width: 768px){
-	h4 {
+	.alice {
 		text-align: center;
 	}
 	img {
@@ -168,5 +190,11 @@ img {
 	.rewrap {
 		padding-top: 10px;
 		border-top: 1.5px solid #ec0000;
+	}
+	.more{
+		text-align: center;
+	}
+	.footer-blurb {
+		text-align: center;
 	}
 }
