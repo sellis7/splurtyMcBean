@@ -10,9 +10,12 @@ class QuotesController < ApplicationController
 	def create
 		@quote = Quote.create(quote_params)
 		if @quote.invalid? 	# user error message
-			flash[:error] = '<strong>Quote will not be stored.</strong> Your entry is invalid.'
+			flash[:error] = '<strong>The quote will not be stored.</strong> Your entry is invalid.'
 		end
 		redirect_to root_path
+	end
+
+	def absolute
 	end
 
 	private

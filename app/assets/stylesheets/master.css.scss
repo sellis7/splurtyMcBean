@@ -1,6 +1,10 @@
 /* "intermediate" font method - left as reference
  @import url(https://fonts.googleapis.com/css?family=Muli:400,300);
 */
+
+
+
+
 .clear {
 	clear: both;
 }
@@ -79,8 +83,14 @@ hr {
 	clear: both;
 }
 
-/* quote styling */
 h1 {
+	font-family: 'alegreya_sansregular', sans-serif;
+	font-weight: normal; //didn't want to use bold
+	font-size: 3.5em;
+}
+
+/* quote styling */
+#phrase {
 	font-family: 'alegreya_sansregular', sans-serif;
 	font-weight: normal; //didn't want to use bold
 	font-size: 3.5em;
@@ -119,4 +129,44 @@ h2 {
 	font-family: "Segoe UI", Candara, "Bitstream Vera Sans", "DejaVu Sans", "Bitstream Vera Sans", "Trebuchet MS", Verdana, "Verdana Ref", sans-serif;
 	font-style: italic;
 	font-size: .75em;
+}
+
+/* about page */
+div.about {
+	font-family: "Segoe UI", Candara, "Bitstream Vera Sans", "DejaVu Sans", "Bitstream Vera Sans", "Trebuchet MS", Verdana, "Verdana Ref", sans-serif;
+}
+
+h4 {
+	padding-top: 10px;
+	border-top: 1.5px solid #ec0000;
+	font-family: 'alegreya_sansbold', sans-serif;
+	line-height: 130%;
+	color: #c4c7c9;
+}
+img {
+	padding-bottom: 10px;
+}
+
+.rewrap {
+	padding-bottom: 40px;
+}
+
+/* About page adjustments */
+@media (min-width:769px){
+	h4 {
+		padding-bottom: 10px;
+		border-bottom: 1.5px solid #ec0000;
+	}
+}
+@media (max-width: 768px){
+	h4 {
+		text-align: center;
+	}
+	img {
+		float: right;
+	}
+	.rewrap {
+		padding-top: 10px;
+		border-top: 1.5px solid #ec0000;
+	}
 }

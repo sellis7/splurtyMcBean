@@ -25,7 +25,7 @@
     <div class="col-xs-4 text-right links">
       <%= link_to 'Contribute', new_quote_path %>
       &#32;|&#32;
-      <%= link_to 'About', '#' %>
+      <%= link_to 'About', about_path %>
     </div>
   </header>
   <hr />
@@ -33,9 +33,10 @@
   <br class="clear" />
   <div class="container">
     <% if flash[:error].present? %>
-      <div class="col-xs-10 col-xs-offset-1 alert alert-danger">
+      <div class="col-xs-10 col-xs-offset-1 alert alert-danger err">
         <%= flash[:error].html_safe %>
-        <br />
+      </div>
+      <div class="col-xs-1"> <!-- needed for spacing/styling -->
       </div>
     <% end %>
     <%= yield %>
