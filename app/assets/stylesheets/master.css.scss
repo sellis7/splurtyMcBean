@@ -1,6 +1,8 @@
 /* "intermediate" font method - left as reference
  @import url(https://fonts.googleapis.com/css?family=Muli:400,300);
 */
+/* Repairing a font-naming issue causing errors */
+@import url(https://fonts.googleapis.com/css?family=Alegreya+Sans:400,300,800,700);
 
 .clear {
 	clear: both;
@@ -68,8 +70,8 @@
 }
 .links a {
 	color: #16a4c3;
-	font-family: 'alegreya_sansregular', sans-serif;
-	font-weight: bold;
+	font-family: 'Alegreya Sans', sans-serif;
+	font-weight: 700;
 	font-size: 1.25em;
 }
 .links a:hover {
@@ -81,8 +83,8 @@ hr {
 }
 
 h1 {
-	font-family: 'alegreya_sansregular', sans-serif;
-	font-weight: normal; //didn't want to use bold
+	font-family: 'Alegreya Sans', sans-serif;
+	font-weight: 400; //didn't want to use bold
 	font-size: 3.5em;
 }
 
@@ -92,8 +94,8 @@ h1 {
 }
 
 #phrase {
-	font-family: 'alegreya_sansregular', sans-serif;
-	font-weight: normal; //didn't want to use bold
+	font-family: 'Alegreya Sans', sans-serif;
+	font-weight: 400; //didn't want to use bold
 	font-size: 3.5em;
 	text-align: center;
 	position: relative;
@@ -105,7 +107,8 @@ h1 {
 }
 
 h2 {
-	font-family: 'alegreya_sanslight', sans-serif;
+	font-family: 'Alegreya Sans', sans-serif;
+	font-weight: 300;
 }
 
 h2.catchphrase {
@@ -115,15 +118,17 @@ h2.catchphrase {
 }
 
 .counter {
-	font-family: 'alegreya_sansregular', sans-serif;
+	font-family: 'Alegreya Sans', sans-serif;
+	font-weight: 400;
 	color: #16a4c3;
 }
 
 .q_mark {
 	position: absolute;
 	z-index: -1;
-	margin: -140px 0 0 -60px;
-	font-family: 'alegreya_sansblack', sans-serif;
+	margin: -95px 0 0 -60px;
+	font-family: 'Alegreya Sans', sans-serif;
+	font-weight: 800;
 	font-size: 7em;
 	color: #dcdddf;
 }
@@ -132,8 +137,8 @@ h2.catchphrase {
 /* footer - TEXT ONLY */
 .next-quote {
 	color: #ec0000;
-	font-family: 'alegreya_sansregular', sans-serif;
-	font-weight: bold;
+	font-family: 'Alegreya Sans', sans-serif;
+	font-weight: 700;
 	font-size: 1.5em;
 }
 
@@ -157,7 +162,8 @@ div.about,
 .alice {
 	padding-top: 10px;
 	border-top: 1.5px solid #ec0000;
-	font-family: 'alegreya_sansbold', sans-serif;
+	font-family: 'Alegreya Sans', sans-serif;
+	font-weight: 700;
 	line-height: 130%;
 	color: #c4c7c9;
 }
