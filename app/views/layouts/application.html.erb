@@ -23,11 +23,16 @@
     <div class="col-sm-4 col-sm-offset-4 hidden-xs slogan">
       Advice to help you navigate this world of other people's children.
     </div>
-    <div class="col-xs-12 col-sm-4 text-right links">
-      <!-- working on modal HERE -->
-      <%= link_to 'Contribute', '#', :data => {:toggle => 'modal', :target => '#myModal'} %>
-      &nbsp;|&nbsp;
-      <%= link_to 'About', about_path %>
+
+    <div class="col-xs-12 col-sm-4 text-right">
+      <div class="btn-group btn-group-lg navlinks" role="group" aria-label="navigation">
+        <button type="button" class="btn btn-default my-btn">
+          <%= link_to 'Contribute', '#', :data => {:toggle => 'modal', :target => '#myModal'} %>
+        </button>
+        <button type="button" class="btn btn-default">
+          <%= link_to 'About', about_path %>
+        </button>
+      </div>
     </div>
   </header>
 
@@ -68,16 +73,35 @@
   <hr />
   <br class="clear" />
 
+<!-- *****Much commented out here, while working through
+    attempt with Previous & Next buttons***** -->
+
   <div class="container msg">
       <% if flash[:error].present? %>
         <div class="col-xs-10 col-xs-offset-1 alert alert-danger">
           <%= flash[:error].html_safe %>
         </div>
+      <% elsif flash[:notice].present? %>
+        <div class="col-xs-10 col-xs-offset-1 alert alert-success">
+          <%= flash[:notice].html_safe %>
+        </div>
       <% end %>
       <div class="col-xs-12">
+        <!-- <#%= if @quote.previous = link_to "Previous", @quote.previous %> -->
+        <!-- <#%= elsif @quote.next = link_to "Next", @quote.next %> -->
+        <!-- <#%= else yield %> -->
+        <!-- <#% end %> -->
         <%= yield %>
       </div>
+      <!-- <div class="col-xs-12"> -->
+      <!-- <br /> -->
+        <!-- <ul class="pager"> -->
+        <!--  <li><a href="#">Previous</a></li> -->
+        <!--  <li><a href="#">Next</a></li> -->
+      <!--  </ul> -->
+    <!--  </div> -->
   </div>
+  
 
   <div class="footer">
     <div class="container">
@@ -92,5 +116,6 @@
       </div>
     </div>
   </div>
+
 </body>
 </html>

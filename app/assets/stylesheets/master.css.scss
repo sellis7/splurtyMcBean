@@ -65,10 +65,10 @@
 }
 
 /* links */
-.links {
-	padding: 10px 15px 10px 0;
+.navlinks {
+	margin: -8px 0px 10px 0;
 }
-.links a {
+.navlinks a {
 	color: #16a4c3;
 	font-family: 'Alegreya Sans', sans-serif;
 	font-weight: 700;
@@ -76,6 +76,9 @@
 }
 .links a:hover {
 	text-decoration: underline;
+}
+.navlinks a:hover {
+	text-decoration: none;
 }
 
 hr {
@@ -131,6 +134,12 @@ h2.catchphrase {
 	font-weight: 800;
 	font-size: 7em;
 	color: #dcdddf;
+}
+
+.glyphicon {
+    font-family: 'Glyphicons Halflings';
+    font-style: normal;
+    font-weight: 400;
 }
 
 
