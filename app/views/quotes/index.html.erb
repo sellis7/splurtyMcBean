@@ -4,7 +4,8 @@
 	next buttons? -->
 
 <h2 class="catchphrase">
-	<span class="counter">SPLURTY / #<%= @quote.id %>:</span>
+	<span class="counter">SPLURTY / <!-- ORIG #<%= @quote.id %>:</span> -->
+	<%= @quote.unique_tag %>  <!-- TESTING -->
 	&nbsp;Because life is challenging enough without the <em>supporting cast</em>.
 </h2>
 <br />
