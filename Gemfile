@@ -33,6 +33,9 @@ gem 'bootstrap-sass', '~> 3.3.5'
 # adding Simple Form
 gem 'simple_form'
 
+# Install Seed Dump gem to migrate databases
+gem 'seed_dump'
+
 group :doc do
   # bundle exec rake doc:rails generates the API under doc/api.
   gem 'sdoc', require: false
