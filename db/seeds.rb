@@ -12,4 +12,5 @@ Quote.create!([
   {saying: "Two things are infinite: the universe and human stupidity; and I'm not sure about the universe.", author: "Albert Einstein"},
   {saying: "No one can make you feel inferior without your consent.", author: "Eleanor Roosevelt"},
   {saying: "I've learned that people will forget what you said, people will forget what you did, but people will never forget how you made them feel.", author: "Maya Angelou"}
+  {saying: "Nothing is impossible to the person who doesn't do it themselves.", author: "Wiler Rule"}
 ])
