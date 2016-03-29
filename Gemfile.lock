@@ -131,6 +131,7 @@ DEPENDENCIES
   jquery-rails
   pg
   rails (= 4.0.1)
+  rake (= 10.4.2)
   sass-rails (~> 4.0.0)
   sdoc
   seed_dump

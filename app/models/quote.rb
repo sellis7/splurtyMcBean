@@ -10,4 +10,13 @@ class Quote < ActiveRecord::Base
 
 	end
 
+	# previous & next buttons
+	def previous
+	 self.class.where("id < ?", id).last
+	end
+
+	def next
+	 self.class.where("id > ?", id).first
+	end
+
 end

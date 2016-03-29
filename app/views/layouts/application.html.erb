@@ -73,9 +73,6 @@
   <hr />
   <br class="clear" />
 
-<!-- *****Much commented out here, while working through
-    attempt with Previous & Next buttons***** -->
-
   <div class="container msg">
       <% if flash[:error].present? %>
         <div class="col-xs-10 col-xs-offset-1 alert alert-danger">
@@ -87,23 +84,23 @@
         </div>
       <% end %>
 
-<!-- THIS IS WHERE PAGINATION WILL GO - KAMINARI -->
       <div class="col-xs-12">
-        <!-- <#%= if @quote.previous = link_to "Previous", @quote.previous %> -->
-        <!-- <#%= elsif @quote.next = link_to "Next", @quote.next %> -->
-        <!-- <#%= else yield %> -->
-        <!-- <#% end %> -->
+        <h2 class="catchphrase">
+        	<span class="counter">SPLURTY / <%= @quote.id %>:</span>
+        	<!-- #<%= @quote.unique_tag %>   UNIT TESTING -->
+        	&nbsp;Because life is challenging enough without the <em>supporting cast</em>.
+        </h2>
+
         <%= yield %>
       </div>
-      <!-- <div class="col-xs-12"> -->
-      <!-- <br /> -->
-        <!-- <ul class="pager"> -->
-        <!--  <li><a href="#">Previous</a></li> -->
-        <!--  <li><a href="#">Next</a></li> -->
-      <!--  </ul> -->
-    <!--  </div> -->
+      <div class="col-xs-12 pagination">
+      <br />
+        <ul class="pager">
+         <li><%= link_to "Previous", @quote.previous if @quote.previous %></li>
+         <li><%= link_to "Next", @quote.next if @quote.next %></li>
+       </ul>
+     </div>
   </div>
-
 
   <div class="footer">
     <div class="container">

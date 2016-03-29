@@ -115,7 +115,7 @@ h2 {
 }
 
 h2.catchphrase {
-	margin-bottom: 25px;
+	margin-bottom: 100px;
 	text-align: left;
 	color: #898a8b;
 }
@@ -142,6 +142,9 @@ h2.catchphrase {
     font-weight: 400;
 }
 
+.pager {
+	vertical-align: bottom;
+}
 
 /* footer - TEXT ONLY */
 .next-quote {
