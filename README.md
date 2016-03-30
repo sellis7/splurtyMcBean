@@ -1,6 +1,8 @@
 ## SplurtyMcBean (aka. "Don't let 'em rain on your parade")
 
-A quotes generator application providing humorous insight, perspective and advice when encountering challenging personalities in daily life.  Tutorial-based creation but heavily customized with significant structure (HTML) and style (CSS) modifications. Self-directed execution to establish "pagination" functionality of data provided, as well.
+A quotes generator application providing humorous and insightful perspective and advice when encountering challenging personalities in daily life.
+
+Tutorial-based creation but heavily customized with significant structure (HTML) and style (CSS) modifications. Self-directed execution to establish "pagination" functionality of data provided, as well.
 
 Technologies used and explored:
 * Ruby and Rails
