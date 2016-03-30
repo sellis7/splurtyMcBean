@@ -84,22 +84,9 @@
         </div>
       <% end %>
 
-      <div class="col-xs-12">
-        <h2 class="catchphrase">
-        	<span class="counter">SPLURTY / <%= @quote.id %>:</span>
-        	<!-- #<%= @quote.unique_tag %>   UNIT TESTING -->
-        	&nbsp;Because life is challenging enough without the <em>supporting cast</em>.
-        </h2>
-
         <%= yield %>
-      </div>
-      <div class="col-xs-12 pagination">
-      <br />
-        <ul class="pager">
-         <li><%= link_to "Previous", @quote.previous if @quote.previous %></li>
-         <li><%= link_to "Next", @quote.next if @quote.next %></li>
-       </ul>
-     </div>
+
+
   </div>
 
   <div class="footer">

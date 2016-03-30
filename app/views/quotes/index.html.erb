@@ -2,8 +2,21 @@
 	should this be wrapped in an if statement in conjunction with
 	the link_to that would be associated with the previous and
 	next buttons? -->
-
-<h1 id="phrase"><span class="q_mark">&#147;</span><%= @quote.saying %><span class="q_mark">&#148;</span></h1>
-<h2 class="pull-right">– <%= @quote.author %></h2>
-<br />
-<br />
+<div class="col-xs-12">
+	<h2 class="catchphrase">
+		<span class="counter">SPLURTY / <%= @quote.id %>:</span>
+		<!-- #<%= @quote.unique_tag %>   UNIT TESTING -->
+		&nbsp;Because life is challenging enough without the <em>supporting cast</em>.
+	</h2>
+	<h1 id="phrase"><span class="q_mark">&#147;</span><%= @quote.saying %><span class="q_mark">&#148;</span></h1>
+	<h2 class="pull-right">– <%= @quote.author %></h2>
+	<br />
+	<br />
+</div>
+<div class="col-xs-12 pagination">
+	<br />
+	<ul class="pager">
+	 <li><%= link_to "Previous", @quote.previous if @quote.previous %></li>
+	 <li><%= link_to "Next", @quote.next if @quote.next %></li>
+ </ul>
+</div>
